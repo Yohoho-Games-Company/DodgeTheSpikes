@@ -15,9 +15,9 @@ public class CubeController : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown("right") && !DOTween.IsTweening(transform))
+		if (Input.GetKeyDown("right"))
 		{
-			transform.DORotate(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z - 90f), 0.2f);
+			transform.DORotate(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + -90f), 0.2f);
 		}
 		
 		if (Input.GetKeyDown("left") && !DOTween.IsTweening(transform))
